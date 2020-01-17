@@ -36,6 +36,16 @@
         <version>1.9.4</version>
     </dependency>
   </dependencies>
+	<repository>
+  <id>mavet-test</id>
+  <url>test/_packaging/mavet-test/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
   <build>
     <plugins>
       <plugin>
