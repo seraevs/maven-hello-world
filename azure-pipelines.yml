@@ -30,6 +30,6 @@ steps:
 - task: PublisBuildArtifacts@1
   inputs:
     artifactName: 'war'
- pathToPublish: '$(build.artifactStagingDirectory)'
+
 
 
