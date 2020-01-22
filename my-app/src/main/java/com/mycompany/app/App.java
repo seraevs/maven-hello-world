@@ -1,4 +1,4 @@
-package mycompany.app;
+package java.com.mycompany.app;
 /**
  * Hello world!
  *
