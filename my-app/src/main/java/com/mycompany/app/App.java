@@ -1,4 +1,4 @@
-package app;
+package mycompany.app;
 /**
  * Hello world!
  *
