@@ -1,4 +1,6 @@
-FROM alpine:3.4
-RUN apk update
-RUN apk add vim
-RUN apk add curl
+
+FROM java:8
+WORKDIR /
+ADD my-app-1.0-SNAPSHOT.jar my-app-1.0-SNAPSHOT.jar
+EXPOSE 8080
+CMD java - jar my-app-1.0-SNAPSHOT.jar
