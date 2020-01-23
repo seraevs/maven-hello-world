@@ -1,4 +1,4 @@
-FROM hellosergeydocker:latest
-ADD App.class App.class
-RUN apk --update add openjdk8-jre	
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "Hello Sergey"]
+FROM alpine:3.4
+RUN apk update
+RUN apk add vim
+RUN apk add curl
