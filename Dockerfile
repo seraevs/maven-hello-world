@@ -1,7 +1,6 @@
 FROM openjdk:8     
-RUN mkdir -p /usr/local/app
-WORKDIR /usr/local/app
-RUN cd /SpringRest/target
-COPY my-app-1.0-SNAPSHOT.jar /usr/local/app/
+WORKDIR /home
+RUN cd /home
+COPY my-app-1.0-SNAPSHOT.jar /home
 EXPOSE 8085
 ENTRYPOINT ["java","-jar","my-app-1.0-SNAPSHOT.jar"] 
