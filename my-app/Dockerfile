@@ -1,4 +1,4 @@
 FROM java:8  
-COPY . /target/var/www/java  
-WORKDIR /target/var/www/java  
-ENTRYPOINT ["java","-jar","/target/var/www/java/my-app-1.0-SNAPSHOT.jar"]
+COPY . /var/www/java/target  
+WORKDIR /var/www/java/target  
+ENTRYPOINT ["java","-jar","/var/www/java/target/my-app-1.0-SNAPSHOT.jar"]
