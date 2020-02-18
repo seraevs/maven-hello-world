@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Clone') {
             steps {
-                git branch: 'master', url: "https://github.com/seraevs/project-examples.git"
+                git branch: 'master', url: "https://github.com/seraevs/maven-hello-world.git"
             }
         }
         
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 rtMavenRun (
                     tool: MAVEN_TOOL, // Tool name from Jenkins configuration
-                    pom: 'maven-example/pom.xml',
+                    pom: 'my-app/pom.xml',
                     goals: 'clean install',
                     deployerId: "MAVEN_DEPLOYER",
                     resolverId: "MAVEN_RESOLVER"
