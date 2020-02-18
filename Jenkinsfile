@@ -6,7 +6,6 @@ pipeline {
                 git branch: 'master', url: "https://github.com/seraevs/maven-hello-world.git"
             }
         }
-    }
         
         
         stage ('Exec Maven') {
@@ -21,5 +20,6 @@ pipeline {
             }
         }
 
+        
     }
 }
