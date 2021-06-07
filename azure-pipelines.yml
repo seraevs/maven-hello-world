@@ -5,8 +5,8 @@
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'serakuz51@gmail.com'
-  imageRepository: 'github.com_seraevs'
+  dockerRegistryServiceConnection: '4e5560e2-5c3b-4f14-8e28-0119d86e55fa'
+  imageRepository: 'seraevsmavenhelloworld'
   containerRegistry: 'seradocker.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/my-app/Dockerfile'
   tag: '$(Build.BuildId)'
